@@ -1,6 +1,6 @@
 Feature: E2E User Flow from Login to Checkout
 
-    @positive
+    @test @positive
     Scenario: Successful login, add eligible product, apply valid promo, and proceed to checkout
         When I open the login page
         And I select login using email
