@@ -59,8 +59,9 @@ When('I choose the delivery option', () => {
     cy.wait(3000);
     // Click Pilih Layanan Pengiriman
     cy.get('.styles_pickDelivery-upper__V_Y4r').click();
-    cy.contains('Reguler').click();
-    cy.contains('JNT').click();
+    cy.contains('label', 'Regular').click();
+    cy.wait(2000);
+    cy.contains('label', 'JNT').click();
 })
 
 Then('I clear cart', () => {
