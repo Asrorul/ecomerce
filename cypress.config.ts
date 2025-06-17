@@ -31,7 +31,7 @@ export default defineConfig({
   },
 
   e2e: {
-    baseUrl: process.env.BASE_URL || 'https://google.com',
+    baseUrl: process.env.BASE_URL || 'https://recruitment-staging-queenbee.paradev.io',
     supportFile: './cypress/support/e2e.ts',
     specPattern: 'cypress/e2e/features/*.feature',
     testIsolation: false,
